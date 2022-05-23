@@ -11,4 +11,4 @@ const myColors = ['red', 'green', 'blue'];
 
 for(let i = 0; i < myColors.length; i++) {
     allLis[i].style.backgroundColor = myColors[i];
-}
+};
