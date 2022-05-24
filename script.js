@@ -20,3 +20,19 @@ addItems.addEventListener('keypress', function(e) {
         this.value = '';
     }
 });
+
+const form = document.querySelector("#signUpForm");
+
+const creditCard = document.querySelector("#cc");
+const checkBox = document.querySelector("#cb");
+const veggies = document.querySelector("#veggies");
+
+form.addEventListener('submit', function(e) {
+    console.log('cc', cc.value);
+    console.log('checkbox', cb.checked);
+    console.log('veggie', veggie.value);
+    e.preventDefault();
+});
+
+
+
