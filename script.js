@@ -34,5 +34,15 @@ form.addEventListener('submit', function(e) {
     e.preventDefault();
 });
 
-
-
+const getBurger = new Promise((resolve, reject) => {
+    const random = Math.random();
+    if(random > 0.6) {
+        resolve();
+    } else {
+        reject();
+    }
+}).then(() => {
+    console.log("You get a burger!")
+}).catch(() => {
+    console.log("No soup for you!");
+})
