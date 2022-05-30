@@ -45,4 +45,10 @@ const getBurger = new Promise((resolve, reject) => {
     console.log("You get a burger!")
 }).catch(() => {
     console.log("No soup for you!");
-})
+});
+
+async function getPlanets() {
+    const data = await axios.get('https://swapi.dev/api/planets/');
+    console.log(data.data.next)
+}
+getPlanets();
